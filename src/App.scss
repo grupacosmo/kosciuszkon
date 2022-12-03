@@ -1,0 +1,13 @@
+@use "./containers/Hero/hero";
+@use "./containers/Header/header";
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+.main {
+    max-width: 100vw;
+}
+
+#root {
+    overflow-x: hidden;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
