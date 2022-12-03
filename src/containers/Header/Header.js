@@ -3,7 +3,7 @@ import { useState } from "react"
 const MenuItems = () => {
     return (
         <>
-            <li><a href="#">Temat</a></li>
+            <li><a href="#temat">Temat</a></li>
             <li><a href="#">Kalendarz</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Partnerzy</a></li>

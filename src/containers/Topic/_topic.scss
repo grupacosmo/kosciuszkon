@@ -1,0 +1,19 @@
+@import "./../../styles/variables";
+
+.topic {
+    height: 50vh;
+    background-color: $background-color-2;
+
+    .slide {
+        height: 50vh;
+        color: white;
+    }
+
+    .carousel-status {
+        display: none;
+    }
+
+    .control-arrow {
+        width: 20%;
+    }
+}
