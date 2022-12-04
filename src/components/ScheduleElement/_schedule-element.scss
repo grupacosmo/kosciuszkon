@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+$hexagon-small: 40px;
+
+.schedule-element {
+
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+
+    & > div {
+        height: 6rem;
+    }
+
+    &__chevron {
+
+        border-right: 2.3rem solid $main-color;
+        border-top: 3rem solid transparent;
+        border-bottom: 3rem solid transparent;
+        z-index: 2;
+    }
+
+    &__content {
+        background-color: $main-color;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        align-items: center;
+
+        > div:nth-child(1) {
+            font-size: 3rem;
+            color: black;
+        }
+
+        > div:nth-child(2) {
+            background-color: black;
+            height: 100%;
+            text-align: left;
+            padding: 0.5rem;
+            border: 4px solid $main-color;
+            border-left: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px)  {
+    
+    .schedule-element {
+        grid-template-columns: 3rem 1fr;
+        margin-right: 1rem;
+        
+        &__content {
+            grid-template-columns: 30% 70%;
+    
+            > div:nth-child(1) {
+                font-size: 1.5rem;
+                color: black;
+            }
+    
+        }
+    }
+}

@@ -3,6 +3,8 @@
 @use "./components/SectionDivider/section-divider";
 @use "./containers/Topic/topic";
 @use "./components/SectionGradient/section-gradient";
+@use "./containers/Schedule/schedule";
+@use "./components/ScheduleElement/schedule-element";
 
 @import "./styles/variables";
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
