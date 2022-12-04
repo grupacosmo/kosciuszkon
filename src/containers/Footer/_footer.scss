@@ -13,10 +13,6 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    ul {
-        padding-left: 0;
-    }
-
     &__background {
         background-color: $main-color;
         position: absolute;
@@ -116,7 +112,7 @@
     }
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 1000px)  {
     .footer {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -126,6 +122,10 @@
             top: 0;
             right: -60px;
             bottom: 0;
+        }
+
+        ul {
+            padding-left: 0;
         }
 
         &__grid {
