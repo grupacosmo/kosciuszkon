@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Kosciuszkon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Based on [Chttps://github.com/Erfik8/WIiT_Hackathon](https://github.com/Erfik8/WIiT_Hackathon).
 
 ## Available Scripts
 
