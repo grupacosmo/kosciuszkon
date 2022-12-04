@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.faq {
+    width: 90vw;
+    margin: auto;
+
+    .Collapsible {
+        margin-bottom: 1rem;
+
+        &__trigger {
+            color: $main-color;
+            font-size: 1.7rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 2px solid $main-color;
+            display: block;
+
+            &::before {
+                content: " ";
+                display: inline-block;
+                height: 0px;
+                width: 7px;
+                border-left: 7px solid $main-color;
+                border-bottom: 7px solid transparent;
+                border-top: 7px solid transparent;
+                transform: translateY(-4px);
+                transform-origin: 0px center;
+                transition: .3s;
+                padding-right: 1rem;
+                margin-left: .5rem;
+            }
+
+            &.is-open {
+                &::before {
+                    transform: translateY(-7px) rotate(90deg);
+                }
+            }
+        }
+    }
+}

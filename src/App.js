@@ -6,6 +6,7 @@ import SectionDivider from "./components/SectionDivider"
 import Topic from "./containers/Topic"
 import SectionGradient from "./components/SectionGradient"
 import Schedule from "./containers/Schedule"
+import FAQ from "./containers/FAQ/FAQ"
 
 const App = () => {
     return (
@@ -17,6 +18,10 @@ const App = () => {
             <SectionGradient />
             <SectionDivider name="harmonogram" />
             <Schedule />
+            <SectionGradient />
+            <SectionDivider name="faq" />
+            <FAQ />
+            <SectionGradient />
         </div>
     )
 }
