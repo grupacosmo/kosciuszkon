@@ -1,13 +1,17 @@
 import { useState } from "react"
 
-const MenuItems = () => {
+const MenuItems = ({setIsMenuOpen}) => {
+    const handleClick = () => {
+        setIsMenuOpen(false)
+    }
+
     return (
         <>
-            <li><a href="#temat">Temat</a></li>
-            <li><a href="#harmonogram">Harmonogram</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#partnerzy">Partnerzy</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a onClick={handleClick} href="#temat">Temat</a></li>
+            <li><a onClick={handleClick} href="#harmonogram">Harmonogram</a></li>
+            <li><a onClick={handleClick} href="#faq">FAQ</a></li>
+            <li><a onClick={handleClick} href="#partnerzy">Partnerzy</a></li>
+            <li><a onClick={handleClick} href="#kontakt">Kontakt</a></li>
         </>
     )
 }
@@ -20,7 +24,9 @@ const Header = () => {
         <div className="header__wrapper">
             <nav className="header">
                 <ul className="header__menu--desktop">
-                    <MenuItems />
+                    <MenuItems 
+                        setIsMenuOpen={setIsMenuOpen}
+                    />
                 </ul>
                 <span className="header__menu--mobile"
                     onClick={() => {
@@ -45,7 +51,9 @@ const Header = () => {
                 className={`header__hamburger-menu ${isMenuOpen ? "open " : " " }`}
             >
                 <ul>
-                    <MenuItems />
+                    <MenuItems 
+                        setIsMenuOpen={setIsMenuOpen}
+                    />
                 </ul>
             </nav>
         </div>

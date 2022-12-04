@@ -10,6 +10,7 @@ const Topic = () => {
                 showArrows={true}
                 autoPlay
                 infiniteLoop
+                showThumbs={false}
             >
                 <div key="slide1" className="topic__slide">
                     <h2>Topic1</h2>
