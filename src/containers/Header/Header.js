@@ -6,8 +6,8 @@ const MenuItems = () => {
             <li><a href="#temat">Temat</a></li>
             <li><a href="#harmonogram">Harmonogram</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="#">Partnerzy</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#partnerzy">Partnerzy</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
         </>
     )
 }

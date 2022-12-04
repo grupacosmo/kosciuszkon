@@ -7,6 +7,7 @@ import Topic from "./containers/Topic"
 import SectionGradient from "./components/SectionGradient"
 import Schedule from "./containers/Schedule"
 import FAQ from "./containers/FAQ/FAQ"
+import Partners from "./containers/Partners"
 
 const App = () => {
     return (
@@ -21,6 +22,9 @@ const App = () => {
             <SectionGradient />
             <SectionDivider name="faq" />
             <FAQ />
+            <SectionGradient />
+            <SectionDivider name="partnerzy" />
+            <Partners />
             <SectionGradient />
         </div>
     )

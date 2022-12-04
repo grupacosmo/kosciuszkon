@@ -29,6 +29,7 @@ $hexagon-small: 40px;
         > div:nth-child(1) {
             font-size: 3rem;
             color: black;
+            transform: translateX(-.5rem);
         }
 
         > div:nth-child(2) {
