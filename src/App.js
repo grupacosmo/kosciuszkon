@@ -8,6 +8,7 @@ import SectionGradient from "./components/SectionGradient"
 import Schedule from "./containers/Schedule"
 import FAQ from "./containers/FAQ/FAQ"
 import Partners from "./containers/Partners"
+import Footer from "./containers/Footer"
 
 const App = () => {
     return (
@@ -25,7 +26,7 @@ const App = () => {
             <SectionGradient />
             <SectionDivider name="partnerzy" />
             <Partners />
-            <SectionGradient />
+            <Footer />
         </div>
     )
 }
