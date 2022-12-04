@@ -4,6 +4,7 @@ import Header from "./containers/Header"
 import Hero from "./containers/Hero"
 import SectionDivider from "./components/SectionDivider"
 import Topic from "./containers/Topic"
+import SectionGradient from "./components/SectionGradient"
 
 const App = () => {
     return (
@@ -12,6 +13,8 @@ const App = () => {
             <Hero />
             <SectionDivider name="temat" />
             <Topic />
+            <SectionGradient />
+            <SectionDivider name="harmonogram" />
         </div>
     )
 }

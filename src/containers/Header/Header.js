@@ -4,7 +4,7 @@ const MenuItems = () => {
     return (
         <>
             <li><a href="#temat">Temat</a></li>
-            <li><a href="#">Kalendarz</a></li>
+            <li><a href="#harmonogram">Harmonogram</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Partnerzy</a></li>
             <li><a href="#">Kontakt</a></li>
