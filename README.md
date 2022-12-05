@@ -1,6 +1,6 @@
 # Kosciuszkon
 
-Based on [Chttps://github.com/Erfik8/WIiT_Hackathon](https://github.com/Erfik8/WIiT_Hackathon).
+Based on [https://github.com/Erfik8/WIiT_Hackathon](https://github.com/Erfik8/WIiT_Hackathon).
 
 ## Available Scripts
 
