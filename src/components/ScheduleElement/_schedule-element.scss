@@ -27,7 +27,7 @@ $hexagon-small: 40px;
         align-items: center;
 
         > div:nth-child(1) {
-            font-size: 3rem;
+            // font-size: 3rem;
             color: black;
             transform: translateX(-.5rem);
         }
@@ -53,7 +53,7 @@ $hexagon-small: 40px;
             grid-template-columns: 30% 70%;
     
             > div:nth-child(1) {
-                font-size: 1.5rem;
+                // font-size: 1.5rem;
                 color: black;
             }
     

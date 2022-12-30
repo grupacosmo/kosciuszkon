@@ -8,6 +8,9 @@
 @use "./containers/FAQ/faq";
 @use "./containers/Partners/partners";
 @use "./containers/Footer/footer";
+@use "./containers/TopicList/topic-list";
+@use "./components/MapPortal/map-portal";
+@use "./components/CountdownRenderer/countdown-renderer";
 
 @import "./styles/variables";
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');

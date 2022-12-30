@@ -1,0 +1,85 @@
+@import "../../styles/variables";
+
+.map-portal-backdrop {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4999;
+    transition: 0.2s;
+    opacity: 0;
+    visibility: hidden;
+
+    &.show {
+        visibility: visible;
+        opacity: .6;
+    }
+}
+
+.map-portal {
+    position: fixed;
+    left: 5rem;
+    bottom: 5rem;
+    right: 5rem;
+    top: 5rem;
+    background-color: black;
+    border-bottom: 4px solid $main-color;
+    border-top: 1px solid $main-color;
+    z-index: 5000;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transform: rotate3d(1, 0, 0, 90deg);
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    &.show {
+        visibility: visible;
+        transform: none;
+        opacity: 1;
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        font-size: 1.5rem;
+
+        div {
+            padding: 1rem;
+        }
+
+        div:last-child {
+            cursor: pointer;
+        }
+    }
+
+    &__map {
+        display: grid;
+        grid-template-rows: 1fr;
+
+        .leaflet-container {
+            height: 100%;
+        }
+    }
+
+    &__map-link {
+        text-align: center;
+        margin: 0.225rem 0;
+
+        a {
+            color: $main-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px)  {
+    .map-portal {
+        left: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+}

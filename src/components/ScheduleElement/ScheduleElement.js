@@ -11,7 +11,16 @@ const ScheduleElement = ({ time, text }) => {
             <div
                 className="schedule-element__content"
             >
-                <div>{time}</div>
+                <div>
+                    
+
+                    <svg viewBox="0 0 56 18">
+                        <text x="5" y="15">{time}</text>
+                    </svg>
+
+
+                </div>
+                {/* <div>{time}</div> */}
                 <div>{text}</div>
             </div>
         </div>

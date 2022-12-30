@@ -4,6 +4,40 @@
     width: 90vw;
     margin: auto;
 
+    &__links {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+
+        a {
+            display: inline-block;
+            color: white;
+            position: relative;
+            width: 6rem;
+            height: 6rem;
+            
+            svg {
+                height: 3rem;
+                width: 3rem;
+                z-index: 1000;
+                position: relative;
+                left: 25%;
+                transform: translate(-50%, -50%);
+                top: 50%;
+            }
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
+
     .Collapsible {
         margin-bottom: 1rem;
 

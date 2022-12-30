@@ -1,12 +1,71 @@
 @import "./../../styles/variables";
 
 .topic {
-    height: 50vh;
+    // height: 60vh;
     background-color: $background-color-2;
+    display: grid;
+    grid-template-columns: 30rem 1fr;
 
-    .slide {
-        height: 50vh;
+    &__info {
+        position: relative;
+
+        svg {
+            position: absolute;
+            // height: 30vw;
+            width: 40rem;
+            top: calc(-0.05 * 40rem);
+            left: calc(-0.3 * 40rem);
+        }
+
+        article {
+            position: relative;
+            z-index: 1000;
+            text-align: justify;
+
+            h2 {
+                padding-top: 2rem;
+                padding-left: 1rem;
+            }
+
+            p {
+                padding-left: 1rem;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+
+    }
+    &__article-mask {
+        float: right;
+        shape-margin: .5rem;
+        // shape-outside: polygon(-6vw 0, -1vw 17vw, 0 0);
+        shape-outside: polygon(0 0, 12rem 0, 12rem 34rem, 0 34rem, 9rem 17rem);
+        height: 35rem;
+        width: 13rem;
+    }
+
+    .carousel-root {
+        width: calc(100vw - 30rem);
+        height: 100%;
+    }
+
+    &__slide {
+        height: 100%;
         color: white;
+        padding: 0 15vw;
+        padding-top: 1rem;
+
+        a {
+            color: $main-color;
+        }
+    }
+
+    .carousel {
+        height: 100%;
     }
 
     .carousel-status {
@@ -15,5 +74,53 @@
 
     .control-arrow {
         width: 20%;
+    }
+
+    .dot {
+        box-shadow: none;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .topic {
+        &__slide {
+            padding: 0 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px)  {
+    .topic {
+        grid-template-columns: 100%;
+
+        &__info {
+            width: 35rem;
+            height: 32rem;
+
+            article {
+                width: 28rem
+            }
+
+            svg {
+                width: 35rem;
+                top: calc(-0.05 * 35rem);
+                left: calc(-0.3 * 35rem);
+            }
+
+            
+        }
+        &__article-mask {
+            shape-outside: polygon(0 0, 12rem 0, 12rem 28rem, 0 28rem, 8rem 14.5rem);
+            height: 28rem;
+        }
+        .carousel-root {
+            width: 100%;
+            height: 100%;
+        }
+
+        .control-dots {
+            display: none;
+        }
     }
 }

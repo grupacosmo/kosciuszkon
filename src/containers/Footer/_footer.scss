@@ -16,9 +16,9 @@
     &__background {
         background-color: $main-color;
         position: absolute;
-        left: 0;
+        left: -2vh;
         top: 0;
-        right: 0;
+        right: -2vh;
         bottom: 0;
         transform: skew(-20deg);
     }
@@ -49,7 +49,7 @@
     &__visit-us {
         div {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             align-items: center;
 
             a {
@@ -73,6 +73,23 @@
 
             svg {
                 margin-right: .6rem;
+            }
+        }
+
+        button {
+            background-color: $background-color-2;
+            border: 2px solid $text-color-1;
+            padding: 0.225rem 0.5rem;
+            font-family: 'Chakra Petch', sans-serif;
+            display: grid;
+            grid-template-columns: auto auto;
+            border-radius: 2rem;
+            margin: auto;
+            margin-bottom: 0.5rem;
+            
+            svg {
+                height: 1.125rem;
+                width: 1.125rem;
             }
         }
     }
@@ -118,9 +135,9 @@
         padding-right: 2rem;
 
         &__background {
-            left: -60px;
+            left: -10vh;
             top: 0;
-            right: -60px;
+            right: -10vh;
             bottom: 0;
         }
 
@@ -161,6 +178,17 @@
             > div {
                 display: grid;
                 grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px)  {
+    .footer {
+        &__visit-us {
+            div {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
             }
         }
     }
