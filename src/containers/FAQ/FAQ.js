@@ -49,7 +49,7 @@ const FAQ = () => {
                     </div>
                     <div>
                         <div>Wydarzenie na Facebooku</div>
-                        <a href="https://facebook.com/" target="_blank" rel="noreferrer">
+                        <a href="https://www.facebook.com/events/545483540957513/" target="_blank" rel="noreferrer">
                         <Icon icon="fa-brands:facebook-f" />
                             <img src={hex} alt="" />
                         </a>
@@ -57,20 +57,46 @@ const FAQ = () => {
                 {/* </div> */}
             </div>
             <Question
-                title="Jakieś pytanie"
-                text="Tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi."
+                title="Kiedy, co i gdzie to się odbywa?"
+                text="Zarówno Hackcathon, jak i wszystkie konferencje i targi pracy odbywają się 5-6 marca w Krakowie w Klubie Kwadrat. Wydarzenie rozpoczyna się od 11:00, sam Hackathon około godziny 15:00. Harmonogram będzie regularnie aktualizowany, więc prosimy o śledzenie zmian."
             />
             <Question
-                title="Jakieś pytanie"
-                text="Tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi."
+                title="Czy na wydarzenie obowiązują zapisy? I kto może się zapisać?"
+                text="Zapisy są na Hackathon, o których rozpoczęciu będziemy informować. Mogą obowiązywać zapisy na niektóre konferencje - szczegóły również pojawią się na stronie WWW i stronie wydarzenia."
             />
             <Question
-                title="Jakieś pytanie"
-                text="Tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi."
+                title="Czy mogę się zapisać samemu, czy muszę mieć drużynę?"
+                text="Na Hackathon może się zapisać się zarówno drużynowo, jak i samemu. W przypadku zapisu samemu będziemy informować o sposobie dobierania drużyn."
             />
             <Question
-                title="Jakieś pytanie"
-                text="Tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi, tekst odpowiedzi."
+                title="Czy udział w wydarzeniu jest bezpłatny?"
+                text="Tak, zarówno w Hackathonie, jak i we wszystkich konferencjach i atrakcjach. Warunkiem uczestnictwa może być konieczność wcześniejszej rejestracji."
+            />
+            <Question
+                title="Czy turniej jest dla mnie?"
+                text="Jeśli choć trochę miałeś styczności z programowanie albo masz inne umiejętności, które twoim zdaniem mogą być niezbędne do stworzenia ciekawej aplikacji, to oczywiście że tak. Nie bój się spróbować, nic to nie kosztuje, a masz szansę zgarnąć fajne nagrody."
+            />
+            <Question
+                title="Co muszę mieć ze sobą?"
+                text="Laptop i zasilacz, ewentualnie powerbanki (w razie awarii) to absolutna konieczność. Przydatne może być też założenie sobie konta na platformie GitHub.
+                Przygotuj się na 24 godzinny maraton programowania, dlatego warto też zadbać o ewentualny wypoczynek. Na wydarzeniu będzie sala, na której będzie można odpocząć i uciąć drzemkę. 
+                Chyba nie musimy wspominać o dużej porcji motywacji i pomysłów na projekt? "
+            />
+            <Question
+                title="A co z jedzeniem?"
+                text="Dla uczestników turnieju będzie zapewnione jedzenie: pizze, jeden ciepły posiłek, napoje i energetyki. Dodatkowo na miejscu będzie możliwość kupienia sobie dodatkowych przekąsek."
+            />
+            <Question
+                title="Kto może wziąć udział w wydarzeniu?"
+                text="Uczestnicy Hackathonu muszą być pełnoletnie osoby ze statusem studenta. Natomiast na same wydarzenie zapraszamy wszystkich zainteresowanych, niezależnie od wieku."
+            />
+            <Question
+                title="Ile osób może mieć drużyna?"
+                text="Drużyny mogą liczyć od 2 do 4 osób."
+            />
+            <Question
+                title="Mam inne pytanie"
+                text="Napisz do nas w wiadomości email: hackathon.pk.2022@gmail.com lub na facebooku. Ktoś z naszego teamu z chęcia rozwieje wszelkie wątpliwości."
             />
         </div>
     )
