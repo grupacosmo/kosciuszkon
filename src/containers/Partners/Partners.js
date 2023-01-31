@@ -2,17 +2,22 @@
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
-// tech partners
+// gold partner
+import sabre from "../../assets/partners/tech/sabre.png"
+
+// silver partners
 import forprogrammers from "../../assets/partners/tech/4programmers.png"
 import hitachi from "../../assets/partners/tech/hitachi.svg"
-import itechart from "../../assets/partners/tech/itechart.png"
-import sabre from "../../assets/partners/tech/sabre.png"
 import softserve from "../../assets/partners/tech/softserve.png"
+
+// event partners
+import itechart from "../../assets/partners/tech/itechart.png"
 
 // media partners
 import crossweb from "../../assets/partners/media/crossweb.png"
 import solidjobs from "../../assets/partners/media/solidjobs.png"
 import studentnews from "../../assets/partners/media/studentnews.png"
+import kms from "../../assets/partners/media/kms.png"
 
 // const Partner = ({ idx }) => {
 //     return (
@@ -32,32 +37,35 @@ import studentnews from "../../assets/partners/media/studentnews.png"
 //     )
 // }
 
-const techPartnerData = [
+const goldPartnerData = [
     {
         img: sabre,
         link: "https://www.sabre.com/locations/poland/careers/",
         partnerName: "Sabre",
         customClass: "sabre"
-    }, {
+    }
+]
+
+const silverPartnerData = [
+    {
         img: hitachi,
         link: "https://www.facebook.com/hitachienergy.global",
         partnerName: "Hitachi Energy",
         customClass: "hitachi"
     }, {
-        img: itechart,
-        link: "https://join.itechart.com/",
-        partnerName: "iTechArt",
-        customClass: "itechart"
-    }, {
-        img: forprogrammers,
-        link: "https://4programmers.net/",
-        partnerName: "4programmers",
-        customClass: "forprogrammers"
-    }, {
         img: softserve,
         link: "https://career.softserveinc.com/poland",
         partnerName: "SoftServe",
         customClass: "softserve"
+    }
+]
+
+const eventPartnerData = [
+    {
+        img: itechart,
+        link: "https://join.itechart.com/",
+        partnerName: "iTechArt",
+        customClass: "itechart"
     }
 ]
 
@@ -77,7 +85,17 @@ const mediaPartnerData = [
         link: "https://www.studentnews.pl",
         partnerName: "Grupa StudentNews",
         customClass: "studentnews"
-    }
+    }, {
+        img: kms,
+        link: "https://kms.org.pl/",
+        partnerName: "Kraków Miastem Startupów",
+        customClass: "kms"
+    }, {
+        img: forprogrammers,
+        link: "https://4programmers.net/",
+        partnerName: "4programmers",
+        customClass: "forprogrammers"
+    },
 ]
 
 const PartnerElement = ({img, link, partnerName, customClass}) => {
@@ -88,6 +106,35 @@ const PartnerElement = ({img, link, partnerName, customClass}) => {
             <a href={link} target="_blank" rel="noreferrer" aria-label={partnerName}>
                 <img src={img} alt={partnerName}/>
             </a>
+        </div>
+    )
+}
+
+const PartnerCategory = ({ categoryName }) => {
+    return (
+        <div
+            className="partners__category"
+        >
+            {categoryName}
+        </div>
+    )
+}
+
+const PartnerGrid = ({partnerArray, customClass}) => {
+    return (
+        <div
+            className={`partners__grid ${customClass}`}
+        >
+            {
+                partnerArray.map(e => (
+                    <PartnerElement 
+                        img={e.img}
+                        link={e.link}
+                        partnerName={e.partnerName}
+                        customClass={e.customClass}
+                    />
+                ))
+            }
         </div>
     )
 }
@@ -125,34 +172,14 @@ const Partners = () => {
                     ))
                 }
             </Slider> */}
-            <div
-                className="partners__grid tech"
-            >
-                {
-                    techPartnerData.map(e => (
-                        <PartnerElement 
-                            img={e.img}
-                            link={e.link}
-                            partnerName={e.partnerName}
-                            customClass={e.customClass}
-                        />
-                    ))
-                }
-            </div>
-            <div
-                className="partners__grid media"
-            >
-                {
-                    mediaPartnerData.map(e => (
-                        <PartnerElement 
-                            img={e.img}
-                            link={e.link}
-                            partnerName={e.partnerName}
-                            customClass={e.customClass}
-                        />
-                    ))
-                }
-            </div>
+            <PartnerCategory categoryName="Złoty partner" />
+            <PartnerGrid partnerArray={goldPartnerData} customClass="gold" />
+            <PartnerCategory categoryName="Srebrni partnerzy" />
+            <PartnerGrid partnerArray={silverPartnerData} customClass="silver" />
+            <PartnerCategory categoryName="Partnerzy wydarzenia" />
+            <PartnerGrid partnerArray={eventPartnerData} customClass="event" />
+            <PartnerCategory categoryName="Patroni medialni" />
+            <PartnerGrid partnerArray={mediaPartnerData} customClass="media" />
         </div>
     )
 }

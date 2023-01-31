@@ -9,30 +9,50 @@ $hexbox-size: 70px;
 
     &__grid {
 
-        &.tech {
-            grid-template-columns: repeat(5, 1fr);
-        }
-
-        &.media {
-            grid-template-columns: repeat(3, 1fr);
-
-            .partners__element {
-                img {
-                    width: 65%;
-                }
-            }
-        }
-
         display: grid;
         align-items: center;
         text-align: center;
+        width: 85vw;
+
+        grid-template-rows: 12rem;
+
+        &.gold {
+            grid-template-columns: 1fr;
+
+            img {
+                max-width: 35%;
+            }
+        }
+
+        &.silver {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &.event {
+            grid-template-columns: 1fr;
+
+            img {
+                max-width: 25%;
+            }
+        }
+
+        &.media {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+
+    }
+
+    &__category {
+        text-align: center;
+        font-size: 1.7rem;
     }
 
     &__element {
-        a {
-            img {
-                width: 80%;
-            }
+
+        img {
+            max-height: 12rem;
+            max-width: 80%;
         }
 
         &.softserve {
@@ -126,28 +146,22 @@ $hexbox-size: 70px;
 
 @media only screen and (max-width: 800px) {
     .partners {
-        &__grid {
-            align-content: center;
-            align-items: center;
 
-            &.tech {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 10rem);
-            }
+        &__grid {
 
             &.media {
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, 10rem);
+                grid-template-rows: repeat(3, 9rem);
             }
         }
 
         &__element {
 
-            &.softserve, &.studentnews {
+            &.forprogrammers {
                 grid-column: 1 / span 2;
 
                 img {
-                    width: 45%;
+                    width: 50%;
                 }
             }
         }
