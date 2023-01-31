@@ -7,7 +7,7 @@ import hex from "../../assets/hex-slim.svg"
 import kodowanie from "../../assets/backgrounds/kodowanie.webp"
 import kwadrat from "../../assets/backgrounds/kwadrat.webp"
 import prelekcje2 from "../../assets/backgrounds/prelekcje2.webp"
-import atrakcje from "../../assets/backgrounds/atrakcje.webp"
+import atrakcje from "../../assets/backgrounds/prelekcje.webp"
 
 
 const Topic = () => {

@@ -41,15 +41,15 @@ const FAQ = () => {
                 </span> */}
                 {/* <div> */}
                     <div>
-                        <div>Formularz rejestracyjny</div>
-                        <a href="https://forms.google.com/" target="_blank" rel="noreferrer">
+                        <div id="faq__form-label">Formularz rejestracyjny</div>
+                        <a href="https://forms.office.com/r/9AH7VzkWa4" target="_blank" rel="noreferrer" aria-labelledby="faq__form-label">
                             <Icon icon="fluent:form-24-regular" />
                             <img src={hex} alt="" />
                         </a>
                     </div>
                     <div>
-                        <div>Wydarzenie na Facebooku</div>
-                        <a href="https://www.facebook.com/events/545483540957513/" target="_blank" rel="noreferrer">
+                        <div id="faq__fb-evennt-label">Wydarzenie na Facebooku</div>
+                        <a href="https://www.facebook.com/events/545483540957513/" target="_blank" rel="noreferrer" aria-labelledby="faq__fb-evennt-label">
                         <Icon icon="fa-brands:facebook-f" />
                             <img src={hex} alt="" />
                         </a>
@@ -88,7 +88,7 @@ const FAQ = () => {
             />
             <Question
                 title="Kto może wziąć udział w wydarzeniu?"
-                text="Uczestnicy Hackathonu muszą być pełnoletnie osoby ze statusem studenta. Natomiast na same wydarzenie zapraszamy wszystkich zainteresowanych, niezależnie od wieku."
+                text="Uczestnicy Hackathonu muszą być pełnoletnie osoby z ważnym statusem studenta lub legitymacją szkolną. Natomiast na same wydarzenie zapraszamy wszystkich zainteresowanych, niezależnie od wieku."
             />
             <Question
                 title="Ile osób może mieć drużyna?"

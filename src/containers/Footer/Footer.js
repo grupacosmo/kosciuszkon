@@ -64,16 +64,16 @@ const Footer = () => {
                         <div>
                             <div>
                                 <ul>
-                                    <li><a href="/#">Regulamin</a></li>
-                                    <li><a href="/#">Organizatorzy</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1GKs2Gf_lKRk_lYXAfLcviRvcbeVVuq57/view?usp=sharing" target="_blank" rel="noreferrer">Regulamin</a></li>
+                                    <li><a href="https://www.facebook.com/samorzad.wiitpk" target="_blank" rel="noreferrer">Organizatorzy</a></li>
                                 </ul>
                             </div>
                             <div>
                                 <ul>
-                                    <li><a href="/#"><Icon icon="fa-brands:facebook-f" />Facebook 1</a></li>
-                                    <li><a href="/#"><Icon icon="fa-brands:facebook-f" />Facebook 2</a></li>
-                                    <li><a href="/#"><Icon icon="fa6-brands:instagram" />Instagram 1</a></li>
-                                    <li><a href="/#"><Icon icon="fa6-brands:instagram" />Instagram 2</a></li>
+                                    <li><a href="https://www.facebook.com/samorzad.wiitpk" target="_blank" rel="noreferrer"><Icon icon="fa-brands:facebook-f" />WRSS WIiT</a></li>
+                                    <li><a href="https://www.facebook.com/cosmopk.kn" target="_blank" rel="noreferrer"><Icon icon="fa-brands:facebook-f" />Cosmo PK</a></li>
+                                    <li><a href="https://www.instagram.com/wrss_wiit_pk/" target="_blank" rel="noreferrer"><Icon icon="fa6-brands:instagram" />WRSS WIiT</a></li>
+                                    <li><a href="https://www.instagram.com/cosmopk_kn/" target="_blank" rel="noreferrer"><Icon icon="fa6-brands:instagram" />Cosmo PK</a></li>
                                 </ul>
                             </div>
                         </div>

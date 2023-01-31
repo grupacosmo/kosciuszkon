@@ -6,87 +6,150 @@ $hexbox-size: 70px;
     width: 85vw;
     margin: auto;
     margin-bottom: 1rem;
-}
 
-.partner {
-    display: flex;
-    justify-items: center;
-    // justify-content: center;
-    position: relative;
-    transform: translateX(50%);
-    left: calc(-1 * $hexbox-size / 2);
+    &__grid {
 
-    &__outter {
-        &::before {
-            content: " ";
-            position: absolute;
-            top: 0px;
-            left: calc(-1 * $hexbox-size /2 - 1px);
-            border-right: calc($hexbox-size/2 + 2px) solid $main-color;
-            border-top: calc(($hexbox-size*1.7320508075688772935274463415059)/2) solid transparent;
-            border-bottom: calc(($hexbox-size*1.7320508075688772935274463415059)/2) solid transparent;
-            width: 0;
-            height: 0;
-            z-index: 1;
+        &.tech {
+            grid-template-columns: repeat(5, 1fr);
         }
 
-        &::after {
-            content: " ";
-            position: absolute;
-            top: 0px;
-            left: $hexbox-size + 1px;
-            border-left: calc($hexbox-size/2 + 2px) solid $main-color;
-            border-top: calc(($hexbox-size*1.7320508075688772935274463415059)/2) solid transparent;
-            border-bottom: calc(($hexbox-size*1.73205080756887729352744634150599)/2) solid transparent;
-            width: 0;
-            height: 0;
-            z-index: 1;
+        &.media {
+            grid-template-columns: repeat(3, 1fr);
+
+            .partners__element {
+                img {
+                    width: 65%;
+                }
+            }
         }
 
+        display: grid;
+        align-items: center;
         text-align: center;
-        background-color: $main-color;
-        width: $hexbox-size;
-        margin-left: 1px;
-        height: calc($hexbox-size*1.7320508075688772935274463415059);
-        z-index: 1;
     }
 
-    &__inner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: $background-color-1;
-        width: calc($hexbox-size - 4px);
-        height: calc($hexbox-size * 1.7320508075688772935274463415059 - 8px);
-        margin-left: 2px;
-        margin-top: 4px;
-        z-index: 2;
-
-        &::before {
-            content: " ";
-            position: absolute;
-            top: 4px;
-            left: calc(-1*($hexbox-size - 4px)/2 + 1px);
-            border-right: calc(($hexbox-size - 4px)/2 + 2px) solid $background-color-1;
-            border-top: calc(($hexbox-size*1.7320508075688772935274463415059 - 8px)/2) solid transparent;
-            border-bottom: calc(($hexbox-size*1.7320508075688772935274463415059 - 8px)/2) solid transparent;
-            width: 0;
-            height: 0;
-            z-index: 2;
+    &__element {
+        a {
+            img {
+                width: 80%;
+            }
         }
 
-        &::after {
-            content: " ";
-            position: absolute;
-            top: 4px;
-            left: calc($hexbox-size - 1px);
-            border-left: calc(($hexbox-size - 4px)/2 + 2px) solid $background-color-1;
-            border-top: calc(($hexbox-size*1.7320508075688772935274463415059 - 8px)/2) solid transparent;
-            border-bottom: calc(($hexbox-size*1.7320508075688772935274463415059 - 8px)/2) solid transparent;
-            width: 0;
-            height: 0;
-            z-index: 2;
+        &.softserve {
+            filter: invert(100%);
+        }
+    }
+}
+
+// .partner {
+//     display: flex;
+//     justify-items: center;
+//     // justify-content: center;
+//     position: relative;
+//     transform: translateX(50%);
+//     left: calc(-1 * $hexbox-size / 2);
+
+//     &__outter {
+//         &::before {
+//             content: " ";
+//             position: absolute;
+//             top: 0px;
+//             left: calc(-1 * $hexbox-size /2 - 1px);
+//             border-right: calc($hexbox-size/2 + 2px) solid $main-color;
+//             border-top: calc(($hexbox-size*1.7320508075688772935274463415059)/2) solid transparent;
+//             border-bottom: calc(($hexbox-size*1.7320508075688772935274463415059)/2) solid transparent;
+//             width: 0;
+//             height: 0;
+//             z-index: 1;
+//         }
+
+//         &::after {
+//             content: " ";
+//             position: absolute;
+//             top: 0px;
+//             left: $hexbox-size + 1px;
+//             border-left: calc($hexbox-size/2 + 2px) solid $main-color;
+//             border-top: calc(($hexbox-size*1.7320508075688772935274463415059)/2) solid transparent;
+//             border-bottom: calc(($hexbox-size*1.73205080756887729352744634150599)/2) solid transparent;
+//             width: 0;
+//             height: 0;
+//             z-index: 1;
+//         }
+
+//         text-align: center;
+//         background-color: $main-color;
+//         width: $hexbox-size;
+//         margin-left: 1px;
+//         height: calc($hexbox-size*1.7320508075688772935274463415059);
+//         z-index: 1;
+//     }
+
+//     &__inner {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         text-align: center;
+//         background-color: $background-color-1;
+//         width: calc($hexbox-size - 4px);
+//         height: calc($hexbox-size * 1.7320508075688772935274463415059 - 8px);
+//         margin-left: 2px;
+//         margin-top: 4px;
+//         z-index: 2;
+
+//         &::before {
+//             content: " ";
+//             position: absolute;
+//             top: 4px;
+//             left: calc(-1*($hexbox-size - 4px)/2 + 1px);
+//             border-right: calc(($hexbox-size - 4px)/2 + 2px) solid $background-color-1;
+//             border-top: calc(($hexbox-size*1.7320508075688772935274463415059 - 8px)/2) solid transparent;
+//             border-bottom: calc(($hexbox-size*1.7320508075688772935274463415059 - 8px)/2) solid transparent;
+//             width: 0;
+//             height: 0;
+//             z-index: 2;
+//         }
+
+//         &::after {
+//             content: " ";
+//             position: absolute;
+//             top: 4px;
+//             left: calc($hexbox-size - 1px);
+//             border-left: calc(($hexbox-size - 4px)/2 + 2px) solid $background-color-1;
+//             border-top: calc(($hexbox-size*1.7320508075688772935274463415059 - 8px)/2) solid transparent;
+//             border-bottom: calc(($hexbox-size*1.7320508075688772935274463415059 - 8px)/2) solid transparent;
+//             width: 0;
+//             height: 0;
+//             z-index: 2;
+//         }
+//     }
+// }
+
+@media only screen and (max-width: 800px) {
+    .partners {
+        &__grid {
+            align-content: center;
+            align-items: center;
+
+            &.tech {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 10rem);
+            }
+
+            &.media {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 10rem);
+            }
+        }
+
+        &__element {
+
+            &.softserve, &.studentnews {
+                grid-column: 1 / span 2;
+
+                img {
+                    width: 45%;
+                }
+            }
         }
     }
 }

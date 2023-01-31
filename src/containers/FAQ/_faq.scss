@@ -17,7 +17,7 @@
             position: relative;
             width: 6rem;
             height: 6rem;
-            
+
             svg {
                 height: 3rem;
                 width: 3rem;
@@ -59,15 +59,25 @@
                 border-top: 7px solid transparent;
                 transform: translateY(-4px);
                 transform-origin: 0px center;
-                transition: .3s;
+                transition: 0.3s;
                 padding-right: 1rem;
-                margin-left: .5rem;
+                margin-left: 0.5rem;
             }
 
             &.is-open {
                 &::before {
                     transform: translateY(-7px) rotate(90deg);
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .faq {
+        .Collapsible {
+            &__trigger {
+                font-size: 1.2rem;
             }
         }
     }
