@@ -1,5 +1,5 @@
 import kwadrat from "../../assets/kwadrat.webp"
-import wiit from "../../assets/wiit.webp"
+// import wiit from "../../assets/wiit.webp"
 import wrss from "../../assets/wrss.webp"
 import fundacja from "../../assets/fundacja.webp"
 import { Icon } from "@iconify/react"
@@ -27,9 +27,9 @@ const Footer = () => {
                             <a href="https://samorzad.pk.edu.pl/" target="_blank" rel="noreferrer">
                                 <img src={wrss} alt="Samorząd Studencki Politechniki Krakowskiej" />
                             </a>
-                            <a href="https://it.pk.edu.pl/" target="_blank" rel="noreferrer" >
+                            {/* <a href="https://it.pk.edu.pl/" target="_blank" rel="noreferrer" >
                                 <img src={wiit} alt="Wydział Informatyki i Telekomunikacji" />
-                            </a>
+                            </a> */}
                             <a href="https://klubkwadrat.pl/pl" target="_blank" rel="noreferrer">
                                 <img src={kwadrat} alt="Klub Kwadrat" />
                             </a>
