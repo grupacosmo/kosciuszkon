@@ -2,6 +2,7 @@ import kwadrat from "../../assets/kwadrat.webp"
 // import wiit from "../../assets/wiit.webp"
 import wrss from "../../assets/wrss.webp"
 import fundacja from "../../assets/fundacja.webp"
+import cosmo from "../../assets/cosmo.png"
 import { Icon } from "@iconify/react"
 import { useState } from "react"
 import MapPortal from "../../components/MapPortal"
@@ -35,6 +36,9 @@ const Footer = () => {
                             </a>
                             <a href="https://fundacjapk.com/" target="_blank" rel="noreferrer">
                                 <img src={fundacja}  alt="Fundacja Samorządu Studentów Politechniki Krakowskiej" />
+                            </a>
+                            <a href="https://www.facebook.com/cosmopk.kn" target="_blank" rel="noreferrer" className="cosmo">
+                                <img src={cosmo}  alt="KN Cosmo PK"/>
                             </a>
                         </div>
                     </div>

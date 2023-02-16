@@ -49,12 +49,19 @@
     &__visit-us {
         div {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             align-items: center;
 
             a {
                 img {
                     width: 120px;
+                }
+            }
+
+            a.cosmo {
+                img {
+                    width: unset;
+                    height: 100px;
                 }
             }
             // a:nth-child(1) {
@@ -190,9 +197,9 @@
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
 
-                a:nth-child(3) {
-                    grid-column: 1 / span 2;
-                }
+                // a:nth-child(3) {
+                //     grid-column: 1 / span 2;
+                // }
             }
         }
     }
