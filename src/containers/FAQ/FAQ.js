@@ -58,7 +58,7 @@ const FAQ = () => {
             </div>
             <Question
                 title="Kiedy, co i gdzie to się odbywa?"
-                text="Zarówno Hackcathon, jak i wszystkie konferencje i targi pracy odbywają się 5-6 marca w Krakowie w Klubie Kwadrat. Wydarzenie rozpoczyna się od 11:00, sam Hackathon około godziny 15:00. Harmonogram będzie regularnie aktualizowany, więc prosimy o śledzenie zmian."
+                text="Zarówno Hackathon, niektóre konferencje i targi pracy odbywają się 5-6 marca w Krakowie w Klubie Kwadrat. Dokładne miejsca i harmonogramy konferencji zostaną udostępnione w harmonogramie. Wydarzenie rozpoczyna się od 11:00, sam Hackathon około godziny 15:00. Prosimy o śledzenie zmian."
             />
             <Question
                 title="Czy na wydarzenie obowiązują zapisy? I kto może się zapisać?"
@@ -78,9 +78,7 @@ const FAQ = () => {
             />
             <Question
                 title="Co muszę mieć ze sobą?"
-                text="Laptop i zasilacz, ewentualnie powerbanki (w razie awarii) to absolutna konieczność. Przydatne może być też założenie sobie konta na platformie GitHub.
-                Przygotuj się na 24 godzinny maraton programowania, dlatego warto też zadbać o ewentualny wypoczynek. Na wydarzeniu będzie sala, na której będzie można odpocząć i uciąć drzemkę. 
-                Chyba nie musimy wspominać o dużej porcji motywacji i pomysłów na projekt? "
+                text="Laptop i zasilacz, ewentualnie powerbanki (w razie awarii) to absolutna konieczność. Przydatne może być też założenie sobie konta na platformie GitHub. Przygotuj się na 24 godzinny maraton programowania, dlatego warto też zadbać o ewentualny wypoczynek (zalecane wzięcie koców, poduszek lub śpiworów). Na wydarzeniu będzie sala, na której będzie można odpocząć i uciąć drzemkę. Chyba nie musimy wspominać o dużej porcji motywacji i pomysłów na projekt?"
             />
             <Question
                 title="A co z jedzeniem?"
@@ -96,7 +94,7 @@ const FAQ = () => {
             />
             <Question
                 title="Mam inne pytanie"
-                text="Napisz do nas w wiadomości email: hackathon.pk.2022@gmail.com lub na facebooku. Ktoś z naszego teamu z chęcia rozwieje wszelkie wątpliwości."
+                text="Napisz do nas w wiadomości email: uczestnicy.kosciuszkon@gmail.com lub na facebooku. Ktoś z naszego teamu z chęcia rozwieje wszelkie wątpliwości."
             />
         </div>
     )
