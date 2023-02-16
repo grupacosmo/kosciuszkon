@@ -52,6 +52,19 @@
         width: calc(100vw - 30rem);
         filter: grayscale(1);
         height: 100%;
+
+        .control-arrow::before {
+            border-top-width: 16px !important;
+            border-bottom-width: 16px !important;
+        }
+
+        .control-prev::before {
+            border-right-width: 16px !important;
+        }
+
+        .control-next::before {
+            border-left-width: 16px !important;
+        }
     }
 
     .slider-wrapper {

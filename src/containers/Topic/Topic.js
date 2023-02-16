@@ -32,7 +32,7 @@ const Topic = () => {
             </div>
             <Carousel
                 showArrows={true}
-                // autoPlay
+                autoPlay
                 infiniteLoop
                 showThumbs={false}
             >
