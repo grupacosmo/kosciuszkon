@@ -2,6 +2,9 @@
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
+// honorary partners
+import fut from "../../assets/partners/media/fut.png"
+
 // gold partner
 import sabre from "../../assets/partners/tech/sabre.png"
 
@@ -9,6 +12,7 @@ import sabre from "../../assets/partners/tech/sabre.png"
 import forprogrammers from "../../assets/partners/tech/4programmers.png"
 import hitachi from "../../assets/partners/tech/hitachi.svg"
 import softserve from "../../assets/partners/tech/softserve.png"
+import ericsson from "../../assets/partners/tech/ericsson.png"
 
 // event partners
 import itechart from "../../assets/partners/tech/itechart.png"
@@ -18,6 +22,7 @@ import crossweb from "../../assets/partners/media/crossweb.png"
 import solidjobs from "../../assets/partners/media/solidjobs.png"
 import studentnews from "../../assets/partners/media/studentnews.png"
 import kms from "../../assets/partners/media/kms.png"
+import futurelab from "../../assets/partners/media/futurelab.png"
 
 // const Partner = ({ idx }) => {
 //     return (
@@ -36,6 +41,15 @@ import kms from "../../assets/partners/media/kms.png"
 //         </div>
 //     )
 // }
+
+const honoraryPartnerData = [
+    {
+        img: fut,
+        link: "https://fut.edu.pl/",
+        partnerName: "Forum Uczelni Technicznych",
+        customClass: "fut"
+    }
+]
 
 const goldPartnerData = [
     {
@@ -57,6 +71,11 @@ const silverPartnerData = [
         link: "https://career.softserveinc.com/poland",
         partnerName: "SoftServe",
         customClass: "softserve"
+    }, {
+        img: ericsson,
+        link: "https://www.ericsson.com/en",
+        partnerName: "Ericsson",
+        customClass: "ericsson"
     }
 ]
 
@@ -95,7 +114,12 @@ const mediaPartnerData = [
         link: "https://4programmers.net/",
         partnerName: "4programmers",
         customClass: "forprogrammers"
-    },
+    }, {
+        img: futurelab,
+        link: "https://futurelab.pk.edu.pl/",
+        partnerName: "FutureLab PK",
+        customClass: "futurelab"
+    }
 ]
 
 const PartnerElement = ({img, link, partnerName, customClass}) => {
@@ -172,6 +196,8 @@ const Partners = () => {
                     ))
                 }
             </Slider> */}
+            <PartnerCategory categoryName="Partnerzy honorowi" />
+            <PartnerGrid partnerArray={honoraryPartnerData} customClass="honorary" />
             <PartnerCategory categoryName="Złoty partner" />
             <PartnerGrid partnerArray={goldPartnerData} customClass="gold" />
             <PartnerCategory categoryName="Srebrni partnerzy" />

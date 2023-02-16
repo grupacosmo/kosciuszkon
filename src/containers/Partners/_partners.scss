@@ -16,6 +16,14 @@ $hexbox-size: 70px;
 
         grid-template-rows: 12rem;
 
+        &.honorary {
+            grid-template-columns: 1fr;
+
+            img {
+                max-width: 20%;
+            }
+        }
+
         &.gold {
             grid-template-columns: 1fr;
 
@@ -25,7 +33,7 @@ $hexbox-size: 70px;
         }
 
         &.silver {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
 
         &.event {
@@ -37,7 +45,7 @@ $hexbox-size: 70px;
         }
 
         &.media {
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(6, 1fr);
         }
 
 
@@ -149,19 +157,37 @@ $hexbox-size: 70px;
 
         &__grid {
 
+            &.honorary {
+                img {
+                    max-width: 35%;
+                }
+            }
+
             &.media {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 9rem);
+            }
+
+            &.silver {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
         &__element {
 
-            &.forprogrammers {
+            // &.forprogrammers {
+            //     grid-column: 1 / span 2;
+
+            //     img {
+            //         width: 50%;
+            //     }
+            // }
+
+            &.ericsson {
                 grid-column: 1 / span 2;
 
                 img {
-                    width: 50%;
+                    width: 35%;
                 }
             }
         }
