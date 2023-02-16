@@ -9,15 +9,17 @@ import fut from "../../assets/partners/media/fut.png"
 import sabre from "../../assets/partners/tech/sabre.png"
 
 // silver partners
-import forprogrammers from "../../assets/partners/tech/4programmers.png"
 import hitachi from "../../assets/partners/tech/hitachi.svg"
 import softserve from "../../assets/partners/tech/softserve.png"
-import ericsson from "../../assets/partners/tech/ericsson.png"
+import onwelo from "../../assets/partners/tech/onwelo.png"
 
 // event partners
 import itechart from "../../assets/partners/tech/itechart.png"
+import makarun from "../../assets/partners/media/makarun.png"
+import ericsson from "../../assets/partners/tech/ericsson.png"
 
 // media partners
+import forprogrammers from "../../assets/partners/tech/4programmers.png"
 import crossweb from "../../assets/partners/media/crossweb.png"
 import solidjobs from "../../assets/partners/media/solidjobs.png"
 import studentnews from "../../assets/partners/media/studentnews.png"
@@ -72,10 +74,10 @@ const silverPartnerData = [
         partnerName: "SoftServe",
         customClass: "softserve"
     }, {
-        img: ericsson,
-        link: "https://www.ericsson.com/en",
-        partnerName: "Ericsson",
-        customClass: "ericsson"
+        img: onwelo,
+        link: "https://onwelo.com/pl/",
+        partnerName: "Onwelo",
+        customClass: "onwelo"
     }
 ]
 
@@ -85,6 +87,16 @@ const eventPartnerData = [
         link: "https://join.itechart.com/",
         partnerName: "iTechArt",
         customClass: "itechart"
+    }, {
+        img: ericsson,
+        link: "https://www.ericsson.com/en",
+        partnerName: "Ericsson",
+        customClass: "ericsson"
+    }, {
+        img: makarun,
+        link: "https://makarun.pl/",
+        partnerName: "makarun",
+        customClass: "makarun"
     }
 ]
 
@@ -196,7 +208,7 @@ const Partners = () => {
                     ))
                 }
             </Slider> */}
-            <PartnerCategory categoryName="Partnerzy honorowi" />
+            <PartnerCategory categoryName="Patroni honorowi" />
             <PartnerGrid partnerArray={honoraryPartnerData} customClass="honorary" />
             <PartnerCategory categoryName="Złoty partner" />
             <PartnerGrid partnerArray={goldPartnerData} customClass="gold" />
