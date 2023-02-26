@@ -4,6 +4,7 @@
 
 // honorary partners
 import fut from "../../assets/partners/media/fut.png"
+import pk from "../../assets/partners/media/pk.png"
 
 // gold partner
 import sabre from "../../assets/partners/tech/sabre.png"
@@ -50,6 +51,11 @@ const honoraryPartnerData = [
         link: "https://fut.edu.pl/",
         partnerName: "Forum Uczelni Technicznych",
         customClass: "fut"
+    }, {
+        img: pk,
+        link: "https://pk.edu.pl/",
+        partnerName: "Politechnika Krakowska",
+        customClass: "pk"
     }
 ]
 

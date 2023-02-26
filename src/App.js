@@ -5,7 +5,7 @@ import Hero from "./containers/Hero"
 import SectionDivider from "./components/SectionDivider"
 import Topic from "./containers/Topic"
 import SectionGradient from "./components/SectionGradient"
-// import Schedule from "./containers/Schedule"
+import Schedule from "./containers/Schedule"
 import FAQ from "./containers/FAQ/FAQ"
 import Partners from "./containers/Partners"
 import Footer from "./containers/Footer"
@@ -21,9 +21,9 @@ const App = () => {
             <SectionGradient />
             <SectionDivider name="tematy" />
             <TopicList />
-            {/* <SectionGradient /> */}
-            {/* <SectionDivider name="harmonogram" /> */}
-            {/* <Schedule /> */}
+            <SectionGradient />
+            <SectionDivider name="harmonogram" />
+            <Schedule />
             <SectionGradient />
             <SectionDivider name="zapisy" />
             <FAQ />

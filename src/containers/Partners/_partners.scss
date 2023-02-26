@@ -17,10 +17,10 @@ $hexbox-size: 70px;
         grid-template-rows: 12rem;
 
         &.honorary {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
 
             img {
-                max-width: 20%;
+                max-width: 50%;
             }
         }
 
@@ -159,7 +159,7 @@ $hexbox-size: 70px;
 
             &.honorary {
                 img {
-                    max-width: 35%;
+                    max-width: 90%;
                 }
             }
 
