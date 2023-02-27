@@ -37,7 +37,7 @@ $hexbox-size: 70px;
         }
 
         &.event {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
 
             img {
                 max-width: 35%;
@@ -187,7 +187,7 @@ $hexbox-size: 70px;
             //     }
             // }
 
-            &.makarun, &.onwelo {
+            &.onwelo {
                 grid-column: 1 / span 2;
 
                 img {

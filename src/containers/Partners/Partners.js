@@ -10,7 +10,7 @@ import pk from "../../assets/partners/media/pk.png"
 import sabre from "../../assets/partners/tech/sabre.png"
 
 // silver partners
-import hitachi from "../../assets/partners/tech/hitachi.svg"
+import hitachi from "../../assets/partners/tech/hitachi.png"
 import softserve from "../../assets/partners/tech/softserve.png"
 import onwelo from "../../assets/partners/tech/onwelo.png"
 
@@ -18,6 +18,7 @@ import onwelo from "../../assets/partners/tech/onwelo.png"
 import itechart from "../../assets/partners/tech/itechart.png"
 import makarun from "../../assets/partners/media/makarun.png"
 import ericsson from "../../assets/partners/tech/ericsson.png"
+import dagrasso from "../../assets/partners/media/dagrasso.png"
 
 // media partners
 import forprogrammers from "../../assets/partners/tech/4programmers.png"
@@ -101,8 +102,13 @@ const eventPartnerData = [
     }, {
         img: makarun,
         link: "https://makarun.pl/",
-        partnerName: "makarun",
+        partnerName: "Makarun",
         customClass: "makarun"
+    }, {
+        img: dagrasso,
+        link: "https://www.dagrasso.pl/",
+        partnerName: "Da Frasso",
+        customClass: "dagrasso"
     }
 ]
 

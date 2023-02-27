@@ -74,7 +74,7 @@ export const scheduleData = {
         sunday: [
             {
                 title: "Mini targi i spotkania z firmami",
-                time: "11:00 18:00",
+                time: "11:00 - 18:00",
                 description: ""
             }, 
             {

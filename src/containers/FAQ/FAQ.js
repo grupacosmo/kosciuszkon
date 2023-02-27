@@ -49,7 +49,7 @@ const FAQ = () => {
                     </div>
                     <div>
                         <div id="workshop-label">Zapisy na warsztaty</div>
-                        <a href="" target="_blank" rel="noreferrer" aria-labelledby="workshop-label">
+                        <a href="https://forms.office.com/e/N8neWH9KEb" target="_blank" rel="noreferrer" aria-labelledby="workshop-label">
                             <Icon icon="grommet-icons:workshop" />
                             <img src={hex} alt="" />
                         </a>
