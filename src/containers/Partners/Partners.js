@@ -5,6 +5,7 @@
 // honorary partners
 import fut from "../../assets/partners/media/fut.png"
 import pk from "../../assets/partners/media/pk.png"
+import wiit from "../../assets/partners/media/wiit.png"
 
 // gold partner
 import sabre from "../../assets/partners/tech/sabre.png"
@@ -57,7 +58,12 @@ const honoraryPartnerData = [
         link: "https://pk.edu.pl/",
         partnerName: "Politechnika Krakowska",
         customClass: "pk"
-    }
+    }, {
+        img: wiit,
+        link: "https://it.pk.edu.pl/",
+        partnerName: "Wydział Informatyki i Telekomunikacji",
+        customClass: "wiit"
+    }, 
 ]
 
 const goldPartnerData = [

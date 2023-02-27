@@ -17,7 +17,7 @@ $hexbox-size: 70px;
         grid-template-rows: 12rem;
 
         &.honorary {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
 
             img {
                 max-width: 50%;
@@ -65,6 +65,13 @@ $hexbox-size: 70px;
 
         &.softserve {
             filter: invert(100%);
+        }
+
+        &.makarun {
+            img {
+                
+                transform: scale(2.2);
+            }
         }
     }
 }
@@ -158,6 +165,8 @@ $hexbox-size: 70px;
         &__grid {
 
             &.honorary {
+                grid-template-columns: 1fr 1fr;
+
                 img {
                     max-width: 90%;
                 }
@@ -187,7 +196,7 @@ $hexbox-size: 70px;
             //     }
             // }
 
-            &.onwelo {
+            &.wiit,&.onwelo {
                 grid-column: 1 / span 2;
 
                 img {
