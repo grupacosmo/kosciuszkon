@@ -28,6 +28,7 @@ import solidjobs from "../../assets/partners/media/solidjobs.png"
 import studentnews from "../../assets/partners/media/studentnews.png"
 import kms from "../../assets/partners/media/kms.png"
 import futurelab from "../../assets/partners/media/futurelab.png"
+import itleaders from "../../assets/partners/media/itleaders.png"
 
 // const Partner = ({ idx }) => {
 //     return (
@@ -118,13 +119,32 @@ const eventPartnerData = [
     }
 ]
 
-const mediaPartnerData = [
+const mediaPartnerData1 = [
     {
         img: crossweb,
         link: "https://crossweb.pl/",
         partnerName: "Crossweb",
         customClass: "crossweb"
     }, {
+        img: itleaders,
+        link: "https://it-leaders.pl/",
+        partnerName: "IT-Leaders",
+        customClass: "itleaders"
+    }, {
+        img: kms,
+        link: "https://kms.org.pl/",
+        partnerName: "Kraków Miastem Startupów",
+        customClass: "kms"
+    }, {
+        img: futurelab,
+        link: "https://futurelab.pk.edu.pl/",
+        partnerName: "FutureLab PK",
+        customClass: "futurelab"
+    }
+]
+
+const mediaPartnerData2 = [
+    {
         img: solidjobs,
         link: "https://solid.jobs/offers/it",
         partnerName: "SOLID.Jobs",
@@ -135,21 +155,11 @@ const mediaPartnerData = [
         partnerName: "Grupa StudentNews",
         customClass: "studentnews"
     }, {
-        img: kms,
-        link: "https://kms.org.pl/",
-        partnerName: "Kraków Miastem Startupów",
-        customClass: "kms"
-    }, {
         img: forprogrammers,
         link: "https://4programmers.net/",
         partnerName: "4programmers",
         customClass: "forprogrammers"
-    }, {
-        img: futurelab,
-        link: "https://futurelab.pk.edu.pl/",
-        partnerName: "FutureLab PK",
-        customClass: "futurelab"
-    }
+    },
 ]
 
 const PartnerElement = ({img, link, partnerName, customClass}) => {
@@ -235,7 +245,8 @@ const Partners = () => {
             <PartnerCategory categoryName="Partnerzy wydarzenia" />
             <PartnerGrid partnerArray={eventPartnerData} customClass="event" />
             <PartnerCategory categoryName="Patroni medialni" />
-            <PartnerGrid partnerArray={mediaPartnerData} customClass="media" />
+            <PartnerGrid partnerArray={mediaPartnerData1} customClass="media1" />
+            <PartnerGrid partnerArray={mediaPartnerData2} customClass="media2" />
         </div>
     )
 }

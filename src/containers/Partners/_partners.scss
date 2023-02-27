@@ -44,8 +44,20 @@ $hexbox-size: 70px;
             }
         }
 
-        &.media {
-            grid-template-columns: repeat(6, 1fr);
+        &.media1 {
+            grid-template-columns: repeat(4, 1fr);
+
+            img {
+                max-width: 45%;
+            }
+        }
+
+        &.media2 {
+            grid-template-columns: repeat(3, 1fr);
+
+            img {
+                max-width: 35%;
+            }
         }
 
 
@@ -172,9 +184,12 @@ $hexbox-size: 70px;
                 }
             }
 
-            &.media {
+            &.media1,&.media2 {
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 9rem);
+
+                img {
+                    max-width: 70%;
+                }
             }
 
             &.silver {
@@ -201,6 +216,14 @@ $hexbox-size: 70px;
 
                 img {
                     width: 35%;
+                }
+            }
+
+            &.forprogrammers {
+                grid-column: span 2;
+
+                img {
+                    max-width: 45%;
                 }
             }
         }
