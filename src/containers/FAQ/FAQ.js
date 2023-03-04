@@ -47,13 +47,13 @@ const FAQ = () => {
                             <img src={hex} alt="" />
                         </a>
                     </div>
-                    <div>
+                    {/* <div>
                         <div id="workshop-label">Zapisy na warsztaty</div>
                         <a href="https://forms.office.com/e/N8neWH9KEb" target="_blank" rel="noreferrer" aria-labelledby="workshop-label">
                             <Icon icon="grommet-icons:workshop" />
                             <img src={hex} alt="" />
                         </a>
-                    </div>
+                    </div> */}
                     <div>
                         <div id="faq__fb-evennt-label">Wydarzenie na Facebooku</div>
                         <a href="https://www.facebook.com/events/545483540957513/" target="_blank" rel="noreferrer" aria-labelledby="faq__fb-evennt-label">

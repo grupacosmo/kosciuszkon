@@ -14,6 +14,7 @@ import sabre from "../../assets/partners/tech/sabre.png"
 import hitachi from "../../assets/partners/tech/hitachi.png"
 import softserve from "../../assets/partners/tech/softserve.png"
 import onwelo from "../../assets/partners/tech/onwelo.png"
+import ibm from "../../assets/partners/tech/ibm.png"
 
 // event partners
 import itechart from "../../assets/partners/tech/itechart.png"
@@ -92,6 +93,11 @@ const silverPartnerData = [
         link: "https://onwelo.com/pl/",
         partnerName: "Onwelo",
         customClass: "onwelo"
+    }, {
+        img: ibm,
+        link: "https://www.ibm.com/us-en/",
+        partnerName: "IBM",
+        customClass: "ibm"
     }
 ]
 

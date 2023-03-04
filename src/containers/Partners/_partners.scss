@@ -33,7 +33,7 @@ $hexbox-size: 70px;
         }
 
         &.silver {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
 
         &.event {
@@ -211,7 +211,7 @@ $hexbox-size: 70px;
             //     }
             // }
 
-            &.wiit,&.onwelo {
+            &.wiit {
                 grid-column: 1 / span 2;
 
                 img {

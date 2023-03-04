@@ -12,7 +12,7 @@ export const scheduleData = {
                 description: ""
             }, 
             {
-                title: "Otwarcie Kościuszkonu - informacje i prelekcja dla uczetników",
+                title: "Otwarcie Kościuszkonu - informacje i prelekcja dla uczestników",
                 time: "13:30 - 15:00",
                 description: ""
             }, 
