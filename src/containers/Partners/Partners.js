@@ -93,12 +93,7 @@ const silverPartnerData = [
         link: "https://onwelo.com/pl/",
         partnerName: "Onwelo",
         customClass: "onwelo"
-    }, {
-        img: ibm,
-        link: "https://www.ibm.com/us-en/",
-        partnerName: "IBM",
-        customClass: "ibm"
-    }
+    },
 ]
 
 const eventPartnerData = [
@@ -122,6 +117,11 @@ const eventPartnerData = [
         link: "https://www.dagrasso.pl/",
         partnerName: "Da Frasso",
         customClass: "dagrasso"
+    }, {
+        img: ibm,
+        link: "https://www.ibm.com/us-en/",
+        partnerName: "IBM",
+        customClass: "ibm"
     }
 ]
 
